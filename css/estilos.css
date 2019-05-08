@@ -1,0 +1,589 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+
+/*====================================================
+						MENU
+====================================================*/
+
+header{
+	width: 100%;
+	height: 70px;
+	/*background-color: #4ECDC4;*/
+	background-color: #22A7F0;
+	position: fixed;
+	top: 0;
+	margin-left: 0;
+	z-index: 999;
+
+	transition: all 0.4s linear;
+}
+
+#checkbox{
+	display: none;
+	position: fixed;
+	top: -15px;
+	left: -15px;
+}
+
+
+#checkbox:checked ~ #menubar {
+	left: 0;
+
+	transition: left 0.3s ease;
+}
+
+
+.btn-menu{
+	position: fixed;
+	top: 17px;
+	left: 50px;
+	width: 40px;
+	height: 40px;	
+	z-index: 999;
+	cursor: pointer;
+}
+
+
+#logo{
+	position: absolute;
+	margin-left: calc(50% - 120px);
+	margin-top: 20px;
+	border: none;
+	font-family: 'Sacramento', 'Segoe UI', Verdana;
+	font-weight: bold;
+	color: #eeeeee;
+	font-size: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: default;
+}
+
+
+/*============================================================
+						NAV ICON
+============================================================*/
+
+#nav-icon{
+	float: left;
+	width: 40px;
+	height: 40px;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+	transform: rotate(0deg);
+
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+
+
+.hide {
+	display: none;
+}
+
+.header-hide {
+	background-color: transparent;
+}
+
+
+#nav-icon span{
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 30px;
+	margin: 0 auto;
+	/*background-color: #34495E;*/
+	background-color: #ffffff;
+	border-radius: 2px;
+	opacity: 1;
+	left: 0;
+
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+
+
+#nav-icon span:nth-child(1) {
+	top: 6px;
+}
+
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
+	top: 16.5px;
+}
+
+#nav-icon span:nth-child(4) {
+	top: 28px;
+}
+
+#checkbox:checked ~ .btn-menu #nav-icon span:nth-child(1) {
+	top: 16.5px;
+	width: 0%;
+	left: 50%;
+}
+
+#checkbox:checked ~ .btn-menu #nav-icon span:nth-child(2) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#checkbox:checked ~ .btn-menu #nav-icon span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+#checkbox:checked ~ .btn-menu #nav-icon span:nth-child(4) {
+	top: 16.5px;
+	width: 0%;
+	left: 50%;
+} 
+
+
+/*============================================================
+						MENUBAR (LATERAL)
+============================================================*/
+
+#menubar{
+	position: fixed;
+	width: 300px;
+	height: 100%;
+	padding-top: 70px;
+	top: 0px;
+	left: -300px;
+	background-color: #22313F;
+	color: #fff;
+	font-family: 'Josefin Sans', 'Segoe UI', Verdana;
+
+	transition: left .3s ease;
+	-o-transition: left .3s ease;
+	-moz-transition: left .3s ease;
+}
+
+
+#menubar ul{
+	list-style: none;
+	margin-top: 100px;
+}
+
+#menubar ul a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Josefin Sans', 'Segoe UI', Verdana;
+}
+
+#image-perfil{
+	width: 50%;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-left: calc(((100% - 150px) / 2) - 2%);
+}
+
+#nome-perfil{	
+	float: left;
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	font-family: 'Josefin Sans';
+	text-align: center;
+	font-weight: bold;
+	font-size: 17pt;
+	margin-top: 20px;
+	cursor:  default;
+}
+
+hr{
+	position: relative;
+	float: left;
+	margin-left: calc(35% / 2); 
+	margin-top: 10px;
+	width: 65%;
+}
+
+.itens_menu{
+	width: calc(100% - 7px);
+	height: 45px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;	
+	line-height: 45px;
+	border-left: 7px solid transparent;
+}
+
+.itens_menu:hover{
+	border-left: 7px solid #22A7F0;
+	background-color: rgba(0, 0, 0, .3);
+
+	transition: all .3s linear;
+}
+
+
+
+	
+
+
+
+/*============================================================
+						PAGES
+============================================================*/
+
+.pages{
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+}
+
+
+
+
+
+/*===================== PAGE: HOME =====================*/
+#home{
+	margin: 0 auto;
+}
+
+#home img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: url('../img/home2.jpg') center center no-repeat;
+	background-size: cover;
+	filter: blur(1.5px) grayscale(10%) saturate(150%);
+}
+
+#intro{
+	position: absolute;
+	float: left;
+	margin: 0 auto;
+	top: calc(50% - 100px);
+	margin-left: calc(50% - 250px);
+	width: 450px;
+	color: #fff;
+	cursor: default;
+}
+
+#ola{
+	font-family: 'Josefin Sans', 'Segoe UI', Verdana;
+	font-weight: bold;
+	font-size: 50px;
+	text-align: center;
+}
+
+#meuNome{
+	font-family: 'Sacramento', 'Segoe UI', Verdana;
+	font-weight: bold;
+	font-size: 80px;
+	text-align: center;
+	line-height: 90px;
+	/*color: #22A7F0;*/
+	color: #59ABE3;
+}
+
+#profissao{
+	font-family: 'Anton', 'Segoe UI', Verdana;
+	font-size: 22px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 20px;
+	color: #ECECEC;
+}
+
+
+/*===================== PAGE: ABOUT =====================*/
+
+#about{
+	background-color: #C5EFF7;
+}
+
+.subdivisoes{
+	width: 100%;
+	min-height: 250px;
+	height: auto;
+}
+
+/*	INFOS   */
+
+#infos{
+	height: 500px;
+	background-color: #fff;
+}
+
+#infos p{
+	font-family: 'Lobster', 'Anton';
+	font-size: 45px;
+	text-align: center;
+	padding-top: 80px;
+	color: #22313F;
+	cursor: default;
+}
+
+#student{
+	float: left;
+	width: 250px;
+	height: 250px;
+	background-color: #1E8BC3;
+	margin-top: 30px;
+	margin-left: 25%;
+	border-radius: 50%;
+}
+
+#infos articles{
+	position: relative;	
+	float: left;
+	margin-top: 50px;
+	margin-left: 8%;
+	font-family: 'Josefin Sans';
+	font-size: 25px;
+	line-height: 50px;
+}
+
+
+/*	FILMES   */
+
+#oculos{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-color: #1E8BC3;
+	margin-top: 60px;
+	margin-left: 33%;
+	border-radius: 50%;
+}
+
+#movies{
+	background-color: #704214;
+	background: url('../img/cinema2.jpg') center center no-repeat;
+	background-size: cover;
+	height: 470px;
+}
+
+#movies span p{
+	position: relative;	
+	float: left;
+	margin-top: 40px;
+	margin-left: 2%;
+	font-family: 'Bungee Inline';
+	font-size: 37px;
+	text-align: center;
+	color: #fff;
+	cursor: default;
+}
+
+.icon-movies{
+	width: 175px;
+	height: 200px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 40px;
+	border: 15px solid #000;	
+	background-color: #fff;
+}
+
+.img-movies{
+	width: 150px;
+	height: 150px;
+	margin-left: calc(50% - 75px);
+	margin-top: calc(50% - 65px);
+}
+
+#movies span:nth-child(2){ /*Icon-Vader*/
+	clear: left;
+	margin-left: calc(50% - 340px);
+}
+
+#movies span:nth-child(3){ /*Icon-DeLorean*/
+	
+}
+
+#movies span:nth-child(4){ /*Icon-Deadpool*/
+	
+}
+
+
+/*	CONHECIMENTO   */
+
+#knowledges{
+	height: 470px;
+}
+
+#idea{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background: url('../img/knowledges.png') center center no-repeat;
+	background-size: 35px 35px;
+	background-color: #1E8BC3;
+	margin-top: 80px;
+	margin-left: 36%;
+	border-radius: 50%;
+}
+
+#knowledges span p{
+	position: relative;	
+	float: left;
+	margin-top: 60px;
+	margin-left: 2%;
+	font-family: 'Bungee Inline';
+	font-size: 37px;
+	text-align: center;
+	color: #22313F;
+	cursor: default;
+}
+
+.icon-knowledges{
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 40px;
+	border-radius: 50%;
+	background-color: #F4B350;
+}
+
+.img-knowledges{
+	width: 150px;
+	height: 150px;
+	margin-left: calc(50% - 75px);
+	margin-top: calc(50% - 75.5px);
+}
+
+#knowledges span:nth-child(2){ /*Icon-Vader*/
+	clear: left;
+	margin-left: calc(50% - 340px);
+}
+
+#knowledges span:nth-child(3){ /*Icon-Vader*/
+	background-color: #EC644B;
+}
+
+#knowledges span:nth-child(4){ /*Icon-Vader*/
+	background-color: #52B3D9;
+}
+
+
+
+
+/*===================== PAGE: PORTFOLIO =====================*/
+
+#portfolio{
+	background-color: #34495E;
+}
+
+
+
+
+#bookbag{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background: url('../img/portfolio-bookbag.png') center center no-repeat;
+	background-size: 30px 30px;
+	background-color: #1E8BC3;
+	margin-top: 90px;
+	margin-left: 42%;
+	border-radius: 50%;
+}
+
+#portfolio span p{
+	position: relative;	
+	float: left;
+	margin-top: 88px;
+	margin-left: 2%;
+	font-family: 'Lobster';
+	font-size: 45px;
+	text-align: center;
+	color: #fff;
+	cursor: default;
+}
+
+
+.icon-port{
+	width: 270px;
+	height: 400px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 40px;
+	background-color: #F4B350;
+}
+
+
+#icon-arte:hover ~ {
+	color: red;
+}
+
+
+.port-title-icon{
+	position: relative;	
+	width: 100%;
+	float: left;
+	margin-top: 110px;
+	font-family: 'Josefin Sans';
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	cursor: default;
+}
+
+
+.port-title-icon2{
+	position: relative;	
+	width: 100%;
+	float: left;
+	margin-top: 50px;
+	font-family: 'Josefin Sans';
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	cursor: default;
+}
+
+.img-port{
+	width: 150px;
+	height: 150px;
+	margin-left: calc(50% - 75px);
+	margin-top: calc(50% - 75.5px);
+}
+
+#arte-visual{
+	height: 210px;
+}
+
+#portfolio a span{ /*Icon-site*/
+	clear: left;
+	margin-left: calc(50% - 290px);
+}
+
+
+/*===================== PAGE: CONTACT =====================*/
+
+#contact{
+	background-color: #C5EFF7;
+}
+

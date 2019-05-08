@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Matheus R. Santos</title>
+	<link rel="shortcut icon" href="img/icon-site.ico" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Josefin+Sans|Sacramento|Bungee+Shade|Bungee+Inline|Lobster" rel="stylesheet">  
+
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="js/jquery-3.1.1.slim.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header class="header-hide">
+		<input type="checkbox" id="checkbox">
+		<label for="checkbox" class="btn-menu">
+			<div id="nav-icon">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>	
+			</div>
+		</label>
+		
+		<div id="logo" class="hide">Matheus R. Santos</div>
+
+		<nav id="menubar">
+			<img src="img/perfil.jpg" alt="" id="image-perfil" />
+			<font id="nome-perfil">Matheus R. Santos</font>
+			<hr size="1" width="50%" align="center" noshade></hr>
+			<ul>
+				<a href="#home"><li id="btn-home" class="itens_menu">HOME</li></a>
+				<a href="#about"><li id="btn-about" class="itens_menu">SOBRE MIM</li></a>
+				<a href="#knowledges"><li id="btn-knowledges" class="itens_menu">HABILIDADES</li></a>
+				<a href="#portfolio"><li id="btn-portfolio" class="itens_menu">PORTFOLIO</li></a>
+				<!--<a href="#contact"><li id="btn-contact" class="itens_menu">CONTATO</li></a>-->
+			</ul>
+		</nav>	
+	</header>
+
+	<section id="home" class="pages">
+		<img src="" alt="">
+		<div id="intro">
+			<p id="ola">Olá! Eu sou</p>
+			<p id="meuNome">Matheus Santos</p>
+			<p id="profissao">Desenvolvedor front-end</p>
+			
+		</div>
+	</section>
+	<section id="about" class="pages">
+		<div id="infos" class="subdivisoes">
+			<p>Sobre Mim</p>
+			<img id="student" src="img/student.png" alt="" />
+			<articles>
+				Matheus R. Santos<br>
+				23 anos de idade<br>
+				Estudante de ADS (Fatec Sorocaba)<br>
+				Residente em Sorocaba/SP
+			</articles>
+		</div>
+		<div id="movies" class="subdivisoes">
+			<span>
+				<img id="oculos" src="img/oculos.png" alt="" />
+				<p>Filmes Favoritos</p>
+			</span>
+			<span class="icon-movies">
+				<img src="img/vader.png" alt="Star Wars" class="img-movies">
+			</span>
+			<span class="icon-movies">
+				<img src="img/delorean.png" alt="De volta para o futuro" class="img-movies">
+			</span>
+			<span class="icon-movies">
+				<img src="img/deadpool.png" alt="Deadpool" class="img-movies">				
+			</span>
+		</div>
+		<div id="knowledges" class="subdivisoes">
+			<span>
+				<img id="idea" src="" alt="" />
+				<p>Habilidades</p>
+			</span>
+			<span class="icon-knowledges">
+				<img src="img/knowledge-html.png" alt="HTML 5" class="img-knowledges">
+			</span>
+			<span class="icon-knowledges">
+				<img src="img/knowledge-css.png" alt="CSS 3" class="img-knowledges">
+			</span>
+			<span class="icon-knowledges">
+				<img src="img/knowledge-js.png" alt="JavaScript" class="img-knowledges">				
+			</span>
+		</div>
+	</section>
+	<section id="portfolio" class="pages">		
+		<span>
+			<img id="bookbag" src="" alt="" />
+			<p>Portfolio</p>
+		</span>
+		
+		<a href="portfolio/site-exerc_semantico/semantico.html">
+			<span class="icon-port">
+				<img src="portfolio/site-exerc_semantico/web.png" alt="Web" class="img-port">
+				<font class="port-title-icon">Criação de sites</font>
+			</span>
+		</a>
+		<span id="icon-arte" class="icon-port">
+			<img src="portfolio/arte-visual/arte.jpg" alt="Arte visual" id="arte-visual" class="img-port">
+				<font class="port-title-icon2">Artes Visuais</font>
+		</span>
+	</section>
+	<!--<section id="contact" class="pages"></section>-->
+</body>
+</html>
